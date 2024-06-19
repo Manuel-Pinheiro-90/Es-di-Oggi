@@ -26,7 +26,7 @@
             {
                 som += lista[i];
             }
-            Console.WriteLine($"\nLa somma è: {som}\n");
+            Console.WriteLine($"La somma è: {som}\n");
             Console.WriteLine($"La media è: {som / x}");
             Console.ReadLine();
 
