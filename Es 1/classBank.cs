@@ -51,16 +51,26 @@ namespace Es_1
                 string Cognome =Console.ReadLine();
                 Console.WriteLine("Nome ");
                 string Nome =Console.ReadLine();
-            
-                ContoCorrente c = new ContoCorrente();
+                
+                Console.WriteLine("inserisci minimo 1000 euri");
+                string Saldo = Console.ReadLine();
+                decimal importo = decimal.Parse(Saldo);
+                if (importo < 1000)
+                { Console.WriteLine("somma minima richiesta"); }
+                else
                 {
-                    _cognome = Cognome;
-                    _nome = Nome;
-                    _saldo = 0;
-                    _contoAttivo = true;
-                    Console.WriteLine($" conto corrente N 1 di {_cognome} {_nome} aperto");
-                    menu();
+                    ContoCorrente c = new ContoCorrente();
+                    {
+                        _cognome = Cognome;
+                        _nome = Nome;
+                        _saldo = 0;
+                        _contoAttivo = true;
+                        Console.WriteLine($" conto corrente N 1 di {_cognome} {_nome} aperto");
+                        menu();
+                    }
                 }
+
+             
             }
 
 
